@@ -1,5 +1,7 @@
 {
   "name": "MYSURFtv",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

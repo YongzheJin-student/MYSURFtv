@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header class="header">
   <ion-toolbar>
       <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button> 
@@ -9,49 +9,27 @@
       </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
-<ion-content>
+<ion-content class="background-image">
+  <ion-button color="transparent"><ion-icon name="add-outline" size="large"></ion-icon><p>Add</p></ion-button>
+  <ion-button><ion-icon name="play-outline" size="large"></ion-icon>play</ion-button>
+  <ion-button color="transparent"><ion-icon name="information-circle-outline" size="large"></ion-icon><p>infor</p></ion-button>
+</ion-content>
+<ion-content class="content">
+  <div class="circle">
   <ion-slides pager="true" [options]="slideOpts" style="z-index:0">
     <ion-slide>
       <img src="../../assets/img/1.png" style="z-index:0">
-      <!-- <ion-button href="#" style="z-index:1">Join US</ion-button>
-      <ion-button href="#" style="z-index:1">Watch Now</ion-button> -->
     </ion-slide>
     <ion-slide>
       <img src="../../assets/img/2.png" style="z-index:0">
-      <!-- <ion-button href="#" style="z-index:1">Join US</ion-button>
-      <ion-button href="#" style="z-index:1">Watch Now</ion-button> -->
+
    </ion-slide>
    <ion-slide>
     <img src="../../assets/img/3.png" style="z-index:0">
-    <!-- <ion-button href="#" style="z-index:1">Join US</ion-button>
-    <ion-button href="#" style="z-index:1">Watch Now</ion-button> -->
  </ion-slide>
-   <!-- <ion-button href="#" style="z-index:1">Join US</ion-button>
-   <ion-button href="#" style="z-index:1">Watch Now</ion-button> -->
   </ion-slides>
+</div>
 
-  <div class="Undertitle">
-    <ion-card>
-      <ion-title>
-        <ion-label>Latest</ion-label>
-      </ion-title>
-      <ion-card-content>
-        <img src="../../assets/img/1.png" style="z-index:0">
-        <img src="../../assets/img/1.png" style="z-index:0">
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card>
-      <ion-title>
-        <ion-label>mySURF.tv Channels</ion-label>
-      </ion-title>
-      <ion-card-content>
-        <img src="../../assets/img/1.png" style="z-index:0">
-        <img src="../../assets/img/1.png" style="z-index:0">
-      </ion-card-content>
-    </ion-card>
-  </div>
 
 
 </ion-content>

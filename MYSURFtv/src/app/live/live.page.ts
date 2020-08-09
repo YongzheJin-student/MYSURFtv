@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
 
 @Component({
   selector: 'app-live',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LivePage implements OnInit {
 
-  constructor() { }
-
+  constructor(private youtube: YoutubeVideoPlayer) { }
+  watch(){
+    this.youtube.openVideo("8b3NauUofUI");
+  }
   ngOnInit() {
+    
   }
 
 }

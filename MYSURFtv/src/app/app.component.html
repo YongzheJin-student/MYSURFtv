@@ -2,46 +2,39 @@
   <ion-menu side="start" menuId="first" contentId="content1">
       <ion-header class="header-image">
         <ion-toolbar>
-          <ion-title>Navigate</ion-title>
+          <ion-title>Search</ion-title>
         </ion-toolbar>
 
         <ion-searchbar color="danger"></ion-searchbar>
       </ion-header>
-      
-      <ion-content>
-        <ion-list *ngFor="let pages of navigate">
-        <ion-menu-toggle auto-hide="true">
-          <ion-item [routerLink]="pages.url" routerDirection="forward">
-              <ion-icon [name]="pages.icon" slot="start"></ion-icon>
-                 {{pages.title}} 
-          </ion-item>
-        </ion-menu-toggle>
-        </ion-list>
-      </ion-content>
+
     </ion-menu>
     
 <ion-router-outlet id="content1"></ion-router-outlet>
 <ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="schedule">
+  <ion-tab-bar slot="bottom" class="undertab">
+    <ion-tab-button tab="home">
       <ion-icon name="calendar"></ion-icon>
-      <ion-label>Schedule</ion-label>
-      <ion-badge>6</ion-badge>
+      <ion-label>Home</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="speakers">
+    <ion-tab-button tab="lastest">
       <ion-icon name="person-circle"></ion-icon>
-      <ion-label>Speakers</ion-label>
+      <ion-label>Lastest</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="map">
-      <ion-icon name="map"></ion-icon>
-      <ion-label>Map</ion-label>
+    <ion-tab-button tab="live">
+      <ion-icon name="caret-forward-outline"></ion-icon>
+      <ion-label>live</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="about">
-      <ion-icon name="information-circle"></ion-icon>
-      <ion-label>About</ion-label>
+    <ion-tab-button tab="watch">
+      <ion-icon name="play-circle-outline"></ion-icon>
+      <ion-label>watch</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="channel">
+      <ion-icon name="download-outline"></ion-icon>
+      <ion-label>channel</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>

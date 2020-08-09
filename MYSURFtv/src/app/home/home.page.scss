@@ -28,3 +28,25 @@ ion-slide{
 ion-card{
   margin-top:20px
 }
+.circle{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  overflow:hidden;
+}
+ion-toolbar{
+background-color: black;
+}
+ion-content.content{
+  --ion-background-color: black;
+}
+ion-header.content{
+  --ion-background-color: black;
+}
+ion-content.background-image{
+  --background: url(../../assets/img/1.png) no-repeat 30% 50%;
+}
+ion-button{
+  margin-top:160px;
+  --color:black;
+}
