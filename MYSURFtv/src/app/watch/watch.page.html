@@ -11,14 +11,55 @@
 </ion-header>
 
 <ion-content>
-  <iframe width="320" height="200"
-  src="https://www.youtube.com/embed/8b3NauUofUI" 
-  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen></iframe>
 
-  <iframe width="320" height="200"
-  src="https://www.youtube.com/embed/PqMAe1Ly8OU" frameborder="0"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; 
-  picture-in-picture" allowfullscreen></iframe>
+  <ion-grid>
+    <ion-row>
+      <ion-card>
+        <iframe width="320" height="200"
+        src="https://www.youtube.com/embed/8b3NauUofUI" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button expand="full" color="light">
+          <ion-icon slot="start" name="play"></ion-icon>
+          Play
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button expand="full" color="medium">
+          <ion-icon slot="start" name="add"></ion-icon>
+          My List
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-card>
+        <iframe width="320" height="200"
+        src="https://www.youtube.com/embed/PqMAe1Ly8OU" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+        picture-in-picture" allowfullscreen></iframe>
+        
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button expand="full" color="light">
+          <ion-icon slot="start" name="play"></ion-icon>
+          Play
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button expand="full" color="medium">
+          <ion-icon slot="start" name="add"></ion-icon>
+          My List
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

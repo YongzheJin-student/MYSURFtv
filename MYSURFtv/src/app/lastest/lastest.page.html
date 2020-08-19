@@ -12,6 +12,10 @@
 </ion-header>
 
 <ion-content>
-<h1>hello</h1>
-
+  <ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let item of items">
+      <ion-img [src]="item.src" class="image-slider"></ion-img>
+    </ion-slide>
+  </ion-slides>
+  
 </ion-content>

@@ -14,22 +14,11 @@
   <ion-button><ion-icon name="play-outline" size="large"></ion-icon>play</ion-button>
   <ion-button color="transparent"><ion-icon name="information-circle-outline" size="large"></ion-icon><p>infor</p></ion-button>
 </ion-content>
-<ion-content class="content">
-  <div class="circle">
-  <ion-slides pager="true" [options]="slideOpts" style="z-index:0">
-    <ion-slide>
-      <img src="../../assets/img/1.png" style="z-index:0">
+
+<ion-content class="loop-image">
+  <ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let item of items">
+      <ion-img [src]="item.src" class="image-slider" width="20" height="10"></ion-img>
     </ion-slide>
-    <ion-slide>
-      <img src="../../assets/img/2.png" style="z-index:0">
-
-   </ion-slide>
-   <ion-slide>
-    <img src="../../assets/img/3.png" style="z-index:0">
- </ion-slide>
-  </ion-slides>
-</div>
-
-
-
+  </ion-slides>  
 </ion-content>

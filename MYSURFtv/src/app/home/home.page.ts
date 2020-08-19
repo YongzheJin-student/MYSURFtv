@@ -9,13 +9,34 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  slideOpts ={
-    effect:'flip',
-    autoplay:{
-    delay:2000,
-},
-loop:true
-};
+
+items = [
+  {
+    src: "assets/img/1.png",
+    name: "king pie"
+  },
+
+  {
+    src: "assets/img/2.png",
+    name: "Red maggot"
+  },
+  {
+    src: "assets/img/3.png",
+    name: "Pigeon"
+  },
+  {
+    src: "assets/img/1.png",
+    name: "Pinacle"
+  },
+  {
+    src: "assets/img/1.png",
+    name: "Pinacle"
+  },
+  {
+    src: "assets/net1.jpg",
+    name: "Pinacle"
+  }
+];
 
   constructor(private menu: MenuController,private modalController:ModalController,private router:Router) { }
   openFirst() {
